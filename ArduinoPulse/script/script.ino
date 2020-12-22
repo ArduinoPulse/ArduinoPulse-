@@ -1,45 +1,76 @@
-/*
-This example will show you how to use the KY-039 heart bear sensor.
-Its a simple basic heart beat monitor with a LCD1602A. In this example i did not use a I2C for those who dont have it.
- */
+//========================================
+//  Arduino Pulse 
+//    24/11/2020
+//    ThibCott JuliDeva
+//    Thibaut Cotture
+//    EPTM - HVS (Sion)
+//    C
+//    code de la arduino
+//----------------------------------------
+// purpose:
+// 
+//========================================
 #include <Wire.h>
 #include <LiquidCrystal.h> 
 
+// Instanciation of the LCD object
+// pourquoi 12,11,5,4,3,2 => noms des pins suffit
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-   double alpha = 0.75;
-   int period = 20;
-   double refresh = 0.0;
+//initialisation des variables
+int period = 20; // What is it? and why 20 ?
+
+/*
+ * Basic function for Arduino
+ * Initialisation of the board
+ * --------------------------
+ * What is initialized:
+ * - LCD :
+ *  Basic text that is forever displayed
+ * - Serial communication
+ */
 void setup(void)
 {
-   pinMode(A0,INPUT);
+   // Serial init
+   Serial.begin(9600);
+
+   // LCD init 16 caractères pour une ligne, 2 lignes
    lcd.begin(16,2);
   
-   
+   //effacer ce qui est ecrit sur le LCD
    lcd.clear();
-   //lcd.setCursor(0,0);
-   Serial.begin(9600);
+   
+   //affichage sur le LCD du texte static
    lcd.setCursor(0,0);
    lcd.print("Arduino Pulse "); 
    lcd.setCursor(0,1);  
-   
    lcd.print("BPM : ");
 }
 
+/*
+ * Basic function for Arduino
+ * Main code of the board -- infinite loop
+ * --------------------------
+ * What is done here?
+ */
 void loop(void)
 {
-   static double oldValue=0;
-   static double oldrefresh=0;
-   int beat=analogRead(A0);
-   double value=alpha*oldValue+(0-alpha)*beat;
-   refresh=value-oldValue;
+   // what is done here? --retrieve AD value from the sensor
+   int ADVal=analogRead(A0);
+
+   // Calcul the hearthbeat why this calcul?
+   int hearthbeat = ADVal/10 - 20;
    
-   //affichage
-   lcd.setCursor(5,1);
-   lcd.print((beat/10)-20);
-   Serial.println((beat/10)-20);
-   oldValue=value;
-   oldrefresh=refresh;
+   //affichage sur le LCD
+   lcd.setCursor(5,1); //erase the old data
+   lcd.print("      ");
+   lcd.setCursor(5,1); //display the actual data
+   lcd.print(hearthbeat);
+
+   //affichage sur l Aplication
+   Serial.println(hearthbeat);
+   
+   // why *10 ?
    delay(period*10);
   
 }

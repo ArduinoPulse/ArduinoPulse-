@@ -1,7 +1,0 @@
-C:\Users\h40008593\Desktop\Projet\testArduino\bin\Debug\testArduino.exe.config
-C:\Users\h40008593\Desktop\Projet\testArduino\bin\Debug\testArduino.exe
-C:\Users\h40008593\Desktop\Projet\testArduino\bin\Debug\testArduino.pdb
-C:\Users\h40008593\Desktop\Projet\testArduino\obj\Debug\testArduino.csprojAssemblyReference.cache
-C:\Users\h40008593\Desktop\Projet\testArduino\obj\Debug\testArduino.csproj.CoreCompileInputs.cache
-C:\Users\h40008593\Desktop\Projet\testArduino\obj\Debug\testArduino.exe
-C:\Users\h40008593\Desktop\Projet\testArduino\obj\Debug\testArduino.pdb
