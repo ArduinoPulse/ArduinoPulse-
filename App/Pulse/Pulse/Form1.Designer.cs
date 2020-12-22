@@ -48,8 +48,6 @@
             this.lblArduinoDetecte = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menu1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.chart = new LiveCharts.WinForms.CartesianChart();
             this.lblBPM = new System.Windows.Forms.Label();
             this.btnBPMvirtuel = new System.Windows.Forms.Button();
@@ -316,8 +314,6 @@
             // 
             this.menu1.BackColor = System.Drawing.Color.Transparent;
             this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu1.Controls.Add(this.button2);
-            this.menu1.Controls.Add(this.button1);
             this.menu1.Controls.Add(this.btnTest);
             this.menu1.Controls.Add(this.chart);
             this.menu1.Controls.Add(this.lblBPM);
@@ -338,34 +334,6 @@
             this.menu1.Size = new System.Drawing.Size(520, 423);
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(115, 365);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 35);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Add point";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(29, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 35);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Test";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // chart
             // 
@@ -762,8 +730,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 

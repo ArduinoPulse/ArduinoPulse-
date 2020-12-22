@@ -18,3 +18,23 @@ C:\Users\EPTM\Desktop\PULSE - Projet M306\Pulse\Pulse\bin\Debug\LiveCharts.WinFo
 C:\Users\EPTM\Desktop\PULSE - Projet M306\Pulse\Pulse\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\EPTM\Desktop\PULSE - Projet M306\Pulse\Pulse\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\EPTM\Desktop\PULSE - Projet M306\Pulse\Pulse\bin\Debug\LiveCharts.Wpf.xml
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\Pulse.exe.config
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\Pulse.exe
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\Pulse.pdb
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.dll
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.WinForms.dll
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.Wpf.dll
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.pdb
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.xml
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.WinForms.pdb
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.WinForms.xml
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.Wpf.pdb
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\bin\Debug\LiveCharts.Wpf.xml
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.csprojAssemblyReference.cache
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.frmMain.resources
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.Properties.Resources.resources
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.csproj.GenerateResource.cache
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.csproj.CoreCompileInputs.cache
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.csproj.CopyComplete
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.exe
+F:\PULSE\ArduinoPulse-\App\Pulse\Pulse\obj\Debug\Pulse.pdb
