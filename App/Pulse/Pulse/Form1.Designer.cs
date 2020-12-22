@@ -331,7 +331,7 @@
             this.menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menu1.Location = new System.Drawing.Point(193, 18);
             this.menu1.Name = "menu1";
-            this.menu1.Size = new System.Drawing.Size(520, 423);
+            this.menu1.Size = new System.Drawing.Size(523, 423);
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
             // 
@@ -473,7 +473,7 @@
             this.menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menu2.Location = new System.Drawing.Point(193, 18);
             this.menu2.Name = "menu2";
-            this.menu2.Size = new System.Drawing.Size(520, 423);
+            this.menu2.Size = new System.Drawing.Size(523, 423);
             this.menu2.TabIndex = 16;
             this.menu2.TabStop = false;
             // 
@@ -533,7 +533,6 @@
             // 
             this.lvEnregistrements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.lvEnregistrements.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvEnregistrements.CheckBoxes = true;
             this.lvEnregistrements.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.colDateDuTest,
@@ -607,7 +606,7 @@
             this.menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menu3.Location = new System.Drawing.Point(193, 18);
             this.menu3.Name = "menu3";
-            this.menu3.Size = new System.Drawing.Size(520, 423);
+            this.menu3.Size = new System.Drawing.Size(523, 423);
             this.menu3.TabIndex = 17;
             this.menu3.TabStop = false;
             // 
