@@ -12,6 +12,8 @@ using System.IO;
 using LiveCharts;
 using LiveCharts.Wpf;
 using LiveCharts.Defaults;
+using System.IO.Ports;
+using System.Threading;
 
 namespace Pulse
 {
@@ -70,6 +72,8 @@ namespace Pulse
 
             // Changement d'affichages
             lblTmpRestant.Text = "Temps restant : " + tbxDuree.Text + " secondes";
+
+            tryToConnction();
         }
 
         private void updateSettings(string sKey, string sValue)
@@ -568,6 +572,57 @@ namespace Pulse
         {
             var aPoint = new ObservablePoint(3, 5);
             chart.Series[0].Values.Add(aPoint);
+        }
+
+        private void timBPMReel_Tick(object sender, EventArgs e)
+        {
+            string a = serialPort.ReadExisting();
+            lblBPMTest.Text = a;
+            Thread.Sleep(200);
+        }
+
+        static SerialPort serialPort;
+
+        void tryToConnction() 
+        {
+            //Inisialisation des variables
+            int iPort = 0;
+            //int iTemp = 0;
+            bool bPort = false;
+
+            //Conncetion 
+
+            while (bPort == false)
+            {
+                //teste si le port COM fonctionne et si il n est pas vide 
+                try
+                {
+                    serialPort = new SerialPort();
+                    serialPort.PortName = "COM" + Convert.ToString(iPort);
+                    serialPort.BaudRate = 9600;
+                    serialPort.Open();
+                    string t = serialPort.ReadExisting();
+
+                    if (string.IsNullOrEmpty(t))
+                    {
+                        bPort = false;
+                        lblConnectionTest.Text = Convert.ToString(iPort)+ " : vide";
+                        iPort++;
+                    }
+                    else
+                    {
+                        bPort = true;
+                        lblConnectionTest.Text = "arduino detecter : COM" + Convert.ToString(iPort);
+                        timBPMReel.Enabled = true;
+                    }
+                }
+                catch
+                {
+                    bPort = false;
+                    lblConnectionTest.Text = Convert.ToString(iPort);
+                    iPort++;
+                }
+            }
         }
     }
 }

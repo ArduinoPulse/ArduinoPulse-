@@ -76,6 +76,9 @@
             this.tim3secondes = new System.Windows.Forms.Timer(this.components);
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
+            this.lblBPMTest = new System.Windows.Forms.Label();
+            this.timBPMReel = new System.Windows.Forms.Timer(this.components);
+            this.lblConnectionTest = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
@@ -314,6 +317,8 @@
             // 
             this.menu1.BackColor = System.Drawing.Color.Transparent;
             this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu1.Controls.Add(this.lblConnectionTest);
+            this.menu1.Controls.Add(this.lblBPMTest);
             this.menu1.Controls.Add(this.btnTest);
             this.menu1.Controls.Add(this.chart);
             this.menu1.Controls.Add(this.lblBPM);
@@ -638,6 +643,31 @@
             this.timBPMvirtuel.Interval = 1000;
             this.timBPMvirtuel.Tick += new System.EventHandler(this.timBPMvirtuel_Tick);
             // 
+            // lblBPMTest
+            // 
+            this.lblBPMTest.AutoSize = true;
+            this.lblBPMTest.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblBPMTest.Location = new System.Drawing.Point(41, 368);
+            this.lblBPMTest.Name = "lblBPMTest";
+            this.lblBPMTest.Size = new System.Drawing.Size(35, 13);
+            this.lblBPMTest.TabIndex = 23;
+            this.lblBPMTest.Text = "label9";
+            // 
+            // timBPMReel
+            // 
+            this.timBPMReel.Enabled = true;
+            this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
+            // 
+            // lblConnectionTest
+            // 
+            this.lblConnectionTest.AutoSize = true;
+            this.lblConnectionTest.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblConnectionTest.Location = new System.Drawing.Point(110, 366);
+            this.lblConnectionTest.Name = "lblConnectionTest";
+            this.lblConnectionTest.Size = new System.Drawing.Size(35, 13);
+            this.lblConnectionTest.TabIndex = 24;
+            this.lblConnectionTest.Text = "label9";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -729,6 +759,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.Label lblBPMTest;
+        private System.Windows.Forms.Timer timBPMReel;
+        private System.Windows.Forms.Label lblConnectionTest;
     }
 }
 
