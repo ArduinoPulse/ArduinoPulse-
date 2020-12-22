@@ -1,0 +1,769 @@
+﻿namespace Pulse
+{
+    partial class frmMain
+    {
+        /// <summary>
+        /// Variable nécessaire au concepteur.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Nettoyage des ressources utilisées.
+        /// </summary>
+        /// <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Code généré par le Concepteur Windows Form
+
+        /// <summary>
+        /// Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+        /// le contenu de cette méthode avec l'éditeur de code.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnFermer = new System.Windows.Forms.PictureBox();
+            this.btnRetrecir = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnLogo = new System.Windows.Forms.PictureBox();
+            this.btnMenu1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblMenu1 = new System.Windows.Forms.Label();
+            this.lblMenu2 = new System.Windows.Forms.Label();
+            this.btnMenu2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblMenu3 = new System.Windows.Forms.Label();
+            this.btnMenu3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnTest = new System.Windows.Forms.Button();
+            this.tbxDuree = new System.Windows.Forms.TextBox();
+            this.lblArduinoDetecte = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.menu1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.chart = new LiveCharts.WinForms.CartesianChart();
+            this.lblBPM = new System.Windows.Forms.Label();
+            this.btnBPMvirtuel = new System.Windows.Forms.Button();
+            this.lblBPM2 = new System.Windows.Forms.Label();
+            this.lblBPM1 = new System.Windows.Forms.Label();
+            this.lbl3sec = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblTmpRestant = new System.Windows.Forms.Label();
+            this.menu2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lvEnregistrements = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colDateDuTest = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colHeureDuTest = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colBPM = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colDureeDuTestEnSec = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.menu3 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tim3secondes = new System.Windows.Forms.Timer(this.components);
+            this.timDuree = new System.Windows.Forms.Timer(this.components);
+            this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
+            this.flowLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).BeginInit();
+            this.btnMenu1.SuspendLayout();
+            this.btnMenu2.SuspendLayout();
+            this.btnMenu3.SuspendLayout();
+            this.menu1.SuspendLayout();
+            this.menu2.SuspendLayout();
+            this.menu3.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(715, 25);
+            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseDown);
+            this.flowLayoutPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseMove);
+            this.flowLayoutPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseUp);
+            // 
+            // btnFermer
+            // 
+            this.btnFermer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnFermer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFermer.BackgroundImage")));
+            this.btnFermer.Location = new System.Drawing.Point(691, 5);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(16, 16);
+            this.btnFermer.TabIndex = 1;
+            this.btnFermer.TabStop = false;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
+            // 
+            // btnRetrecir
+            // 
+            this.btnRetrecir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnRetrecir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRetrecir.BackgroundImage")));
+            this.btnRetrecir.Location = new System.Drawing.Point(671, 5);
+            this.btnRetrecir.Name = "btnRetrecir";
+            this.btnRetrecir.Size = new System.Drawing.Size(16, 16);
+            this.btnRetrecir.TabIndex = 2;
+            this.btnRetrecir.TabStop = false;
+            this.btnRetrecir.Click += new System.EventHandler(this.btnRetrecir_Click);
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(1, 25);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(193, 414);
+            this.flowLayoutPanel2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(231, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Pulse (Thibaut Cotture & Julien Devanthey)";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel3.Controls.Add(this.label1);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(-1, 439);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(715, 25);
+            this.flowLayoutPanel3.TabIndex = 5;
+            // 
+            // btnLogo
+            // 
+            this.btnLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.btnLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogo.BackgroundImage")));
+            this.btnLogo.Location = new System.Drawing.Point(24, 45);
+            this.btnLogo.Name = "btnLogo";
+            this.btnLogo.Size = new System.Drawing.Size(151, 43);
+            this.btnLogo.TabIndex = 6;
+            this.btnLogo.TabStop = false;
+            // 
+            // btnMenu1
+            // 
+            this.btnMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.btnMenu1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnMenu1.Controls.Add(this.lblMenu1);
+            this.btnMenu1.Location = new System.Drawing.Point(-1, 145);
+            this.btnMenu1.Name = "btnMenu1";
+            this.btnMenu1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnMenu1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenu1.Size = new System.Drawing.Size(195, 37);
+            this.btnMenu1.TabIndex = 4;
+            this.btnMenu1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu1_MouseClick);
+            this.btnMenu1.MouseEnter += new System.EventHandler(this.btnMenu1_MouseEnter);
+            this.btnMenu1.MouseLeave += new System.EventHandler(this.btnMenu1_MouseLeave);
+            // 
+            // lblMenu1
+            // 
+            this.lblMenu1.AutoSize = true;
+            this.lblMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.lblMenu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMenu1.Location = new System.Drawing.Point(146, 6);
+            this.lblMenu1.Name = "lblMenu1";
+            this.lblMenu1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMenu1.Size = new System.Drawing.Size(44, 20);
+            this.lblMenu1.TabIndex = 7;
+            this.lblMenu1.Text = "Test";
+            this.lblMenu1.Click += new System.EventHandler(this.lblMenu1_Click);
+            this.lblMenu1.MouseEnter += new System.EventHandler(this.lblMenu1_MouseEnter);
+            this.lblMenu1.MouseLeave += new System.EventHandler(this.lblMenu1_MouseLeave);
+            // 
+            // lblMenu2
+            // 
+            this.lblMenu2.AutoSize = true;
+            this.lblMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lblMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMenu2.Location = new System.Drawing.Point(72, 6);
+            this.lblMenu2.Name = "lblMenu2";
+            this.lblMenu2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMenu2.Size = new System.Drawing.Size(118, 20);
+            this.lblMenu2.TabIndex = 9;
+            this.lblMenu2.Text = "Enregistrement";
+            this.lblMenu2.Click += new System.EventHandler(this.lblMenu2_Click);
+            this.lblMenu2.MouseEnter += new System.EventHandler(this.lblMenu2_MouseEnter);
+            this.lblMenu2.MouseLeave += new System.EventHandler(this.lblMenu2_MouseLeave);
+            // 
+            // btnMenu2
+            // 
+            this.btnMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnMenu2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnMenu2.Controls.Add(this.lblMenu2);
+            this.btnMenu2.Location = new System.Drawing.Point(-1, 181);
+            this.btnMenu2.Name = "btnMenu2";
+            this.btnMenu2.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnMenu2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenu2.Size = new System.Drawing.Size(195, 37);
+            this.btnMenu2.TabIndex = 8;
+            this.btnMenu2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu2_MouseClick);
+            this.btnMenu2.MouseEnter += new System.EventHandler(this.btnMenu2_MouseEnter);
+            this.btnMenu2.MouseLeave += new System.EventHandler(this.btnMenu2_MouseLeave);
+            // 
+            // lblMenu3
+            // 
+            this.lblMenu3.AutoSize = true;
+            this.lblMenu3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lblMenu3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMenu3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMenu3.Location = new System.Drawing.Point(72, 6);
+            this.lblMenu3.Name = "lblMenu3";
+            this.lblMenu3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMenu3.Size = new System.Drawing.Size(118, 20);
+            this.lblMenu3.TabIndex = 11;
+            this.lblMenu3.Text = "Documentation";
+            this.lblMenu3.Click += new System.EventHandler(this.lblMenu3_Click);
+            this.lblMenu3.MouseEnter += new System.EventHandler(this.lblMenu3_MouseEnter);
+            this.lblMenu3.MouseLeave += new System.EventHandler(this.lblMenu3_MouseLeave);
+            // 
+            // btnMenu3
+            // 
+            this.btnMenu3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnMenu3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.btnMenu3.Controls.Add(this.lblMenu3);
+            this.btnMenu3.Location = new System.Drawing.Point(-1, 217);
+            this.btnMenu3.Name = "btnMenu3";
+            this.btnMenu3.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
+            this.btnMenu3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnMenu3.Size = new System.Drawing.Size(195, 37);
+            this.btnMenu3.TabIndex = 10;
+            this.btnMenu3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnMenu3_MouseClick);
+            this.btnMenu3.MouseEnter += new System.EventHandler(this.btnMenu3_MouseEnter);
+            this.btnMenu3.MouseLeave += new System.EventHandler(this.btnMenu3_MouseLeave);
+            // 
+            // btnTest
+            // 
+            this.btnTest.BackColor = System.Drawing.Color.Silver;
+            this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnTest.Location = new System.Drawing.Point(149, 250);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(213, 35);
+            this.btnTest.TabIndex = 12;
+            this.btnTest.Text = "Démarrer la lecture";
+            this.btnTest.UseVisualStyleBackColor = false;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
+            // tbxDuree
+            // 
+            this.tbxDuree.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.tbxDuree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbxDuree.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxDuree.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tbxDuree.Location = new System.Drawing.Point(450, 45);
+            this.tbxDuree.Name = "tbxDuree";
+            this.tbxDuree.Size = new System.Drawing.Size(53, 24);
+            this.tbxDuree.TabIndex = 13;
+            this.tbxDuree.Text = "30";
+            this.tbxDuree.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxDuree.TextChanged += new System.EventHandler(this.tbxDuree_TextChanged);
+            this.tbxDuree.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbxDuree_KeyPress);
+            // 
+            // lblArduinoDetecte
+            // 
+            this.lblArduinoDetecte.AutoSize = true;
+            this.lblArduinoDetecte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblArduinoDetecte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArduinoDetecte.ForeColor = System.Drawing.Color.Red;
+            this.lblArduinoDetecte.Location = new System.Drawing.Point(338, 16);
+            this.lblArduinoDetecte.Name = "lblArduinoDetecte";
+            this.lblArduinoDetecte.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblArduinoDetecte.Size = new System.Drawing.Size(168, 16);
+            this.lblArduinoDetecte.TabIndex = 10;
+            this.lblArduinoDetecte.Text = "L\'arduino n\'est pas détecté";
+            this.lblArduinoDetecte.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(278, 46);
+            this.label3.Name = "label3";
+            this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label3.Size = new System.Drawing.Size(171, 20);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Temps de test (en sec)";
+            // 
+            // menu1
+            // 
+            this.menu1.BackColor = System.Drawing.Color.Transparent;
+            this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu1.Controls.Add(this.button2);
+            this.menu1.Controls.Add(this.button1);
+            this.menu1.Controls.Add(this.btnTest);
+            this.menu1.Controls.Add(this.chart);
+            this.menu1.Controls.Add(this.lblBPM);
+            this.menu1.Controls.Add(this.btnBPMvirtuel);
+            this.menu1.Controls.Add(this.lblBPM2);
+            this.menu1.Controls.Add(this.lblBPM1);
+            this.menu1.Controls.Add(this.lbl3sec);
+            this.menu1.Controls.Add(this.label6);
+            this.menu1.Controls.Add(this.lblArduinoDetecte);
+            this.menu1.Controls.Add(this.label3);
+            this.menu1.Controls.Add(this.tbxDuree);
+            this.menu1.Controls.Add(this.panel_menu_1_1);
+            this.menu1.Controls.Add(this.label7);
+            this.menu1.Controls.Add(this.lblTmpRestant);
+            this.menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu1.Location = new System.Drawing.Point(193, 18);
+            this.menu1.Name = "menu1";
+            this.menu1.Size = new System.Drawing.Size(520, 423);
+            this.menu1.TabIndex = 15;
+            this.menu1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button2.Location = new System.Drawing.Point(115, 365);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(124, 35);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Add point";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(29, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 35);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Test";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // chart
+            // 
+            this.chart.Location = new System.Drawing.Point(29, 146);
+            this.chart.Name = "chart";
+            this.chart.Size = new System.Drawing.Size(465, 121);
+            this.chart.TabIndex = 0;
+            this.chart.Text = "cartesianChart1";
+            this.chart.Visible = false;
+            // 
+            // lblBPM
+            // 
+            this.lblBPM.AutoSize = true;
+            this.lblBPM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBPM.Location = new System.Drawing.Point(489, 366);
+            this.lblBPM.Name = "lblBPM";
+            this.lblBPM.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBPM.Size = new System.Drawing.Size(24, 16);
+            this.lblBPM.TabIndex = 22;
+            this.lblBPM.Text = "00";
+            // 
+            // btnBPMvirtuel
+            // 
+            this.btnBPMvirtuel.BackColor = System.Drawing.Color.Silver;
+            this.btnBPMvirtuel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBPMvirtuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBPMvirtuel.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnBPMvirtuel.Location = new System.Drawing.Point(304, 385);
+            this.btnBPMvirtuel.Name = "btnBPMvirtuel";
+            this.btnBPMvirtuel.Size = new System.Drawing.Size(207, 29);
+            this.btnBPMvirtuel.TabIndex = 20;
+            this.btnBPMvirtuel.Text = "Activer l\'entrée de BPM virtuel";
+            this.btnBPMvirtuel.UseVisualStyleBackColor = false;
+            this.btnBPMvirtuel.Click += new System.EventHandler(this.btnBPMvirtuel_Click);
+            // 
+            // lblBPM2
+            // 
+            this.lblBPM2.AutoSize = true;
+            this.lblBPM2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblBPM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBPM2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBPM2.Location = new System.Drawing.Point(178, 110);
+            this.lblBPM2.Name = "lblBPM2";
+            this.lblBPM2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBPM2.Size = new System.Drawing.Size(141, 33);
+            this.lblBPM2.TabIndex = 19;
+            this.lblBPM2.Text = "BPM : 00";
+            this.lblBPM2.Visible = false;
+            // 
+            // lblBPM1
+            // 
+            this.lblBPM1.AutoSize = true;
+            this.lblBPM1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblBPM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBPM1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBPM1.Location = new System.Drawing.Point(40, 83);
+            this.lblBPM1.Name = "lblBPM1";
+            this.lblBPM1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBPM1.Size = new System.Drawing.Size(445, 20);
+            this.lblBPM1.TabIndex = 18;
+            this.lblBPM1.Text = "Calcule en cours... Veuillez ne pas bouger votre doigt !";
+            this.lblBPM1.Visible = false;
+            // 
+            // lbl3sec
+            // 
+            this.lbl3sec.AutoSize = true;
+            this.lbl3sec.BackColor = System.Drawing.Color.Transparent;
+            this.lbl3sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3sec.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl3sec.Location = new System.Drawing.Point(183, 183);
+            this.lbl3sec.Name = "lbl3sec";
+            this.lbl3sec.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lbl3sec.Size = new System.Drawing.Size(0, 16);
+            this.lbl3sec.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(8, 18);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label6.Size = new System.Drawing.Size(53, 20);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Tests";
+            // 
+            // panel_menu_1_1
+            // 
+            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
+            this.panel_menu_1_1.Name = "panel_menu_1_1";
+            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
+            this.panel_menu_1_1.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(96, 153);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(331, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Veuillez placer votre doigt sur le capteur";
+            // 
+            // lblTmpRestant
+            // 
+            this.lblTmpRestant.AutoSize = true;
+            this.lblTmpRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblTmpRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTmpRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTmpRestant.Location = new System.Drawing.Point(160, 288);
+            this.lblTmpRestant.Name = "lblTmpRestant";
+            this.lblTmpRestant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTmpRestant.Size = new System.Drawing.Size(191, 15);
+            this.lblTmpRestant.TabIndex = 21;
+            this.lblTmpRestant.Text = "Temps restant : 30 secondes";
+            this.lblTmpRestant.Visible = false;
+            // 
+            // menu2
+            // 
+            this.menu2.BackColor = System.Drawing.Color.Transparent;
+            this.menu2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu2.Controls.Add(this.label10);
+            this.menu2.Controls.Add(this.label11);
+            this.menu2.Controls.Add(this.label8);
+            this.menu2.Controls.Add(this.label2);
+            this.menu2.Controls.Add(this.lvEnregistrements);
+            this.menu2.Controls.Add(this.label4);
+            this.menu2.Controls.Add(this.flowLayoutPanel4);
+            this.menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu2.Location = new System.Drawing.Point(193, 18);
+            this.menu2.Name = "menu2";
+            this.menu2.Size = new System.Drawing.Size(520, 423);
+            this.menu2.TabIndex = 16;
+            this.menu2.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(308, 61);
+            this.label10.Name = "label10";
+            this.label10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label10.Size = new System.Drawing.Size(109, 18);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "Durée du test";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(261, 61);
+            this.label11.Name = "label11";
+            this.label11.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label11.Size = new System.Drawing.Size(44, 18);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "BPM";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(150, 61);
+            this.label8.Name = "label8";
+            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label8.Size = new System.Drawing.Size(109, 18);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Heure du test";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(44, 61);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(99, 18);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Date du test";
+            // 
+            // lvEnregistrements
+            // 
+            this.lvEnregistrements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lvEnregistrements.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvEnregistrements.CheckBoxes = true;
+            this.lvEnregistrements.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.colDateDuTest,
+            this.colHeureDuTest,
+            this.colBPM,
+            this.colDureeDuTestEnSec});
+            this.lvEnregistrements.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvEnregistrements.ForeColor = System.Drawing.Color.White;
+            this.lvEnregistrements.FullRowSelect = true;
+            this.lvEnregistrements.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.lvEnregistrements.HideSelection = false;
+            this.lvEnregistrements.Location = new System.Drawing.Point(16, 83);
+            this.lvEnregistrements.Name = "lvEnregistrements";
+            this.lvEnregistrements.Size = new System.Drawing.Size(490, 317);
+            this.lvEnregistrements.TabIndex = 9;
+            this.lvEnregistrements.UseCompatibleStateImageBehavior = false;
+            this.lvEnregistrements.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 23;
+            // 
+            // colDateDuTest
+            // 
+            this.colDateDuTest.Text = "Date du test";
+            this.colDateDuTest.Width = 110;
+            // 
+            // colHeureDuTest
+            // 
+            this.colHeureDuTest.Text = "Heure du test";
+            this.colHeureDuTest.Width = 110;
+            // 
+            // colBPM
+            // 
+            this.colBPM.Text = "BPM";
+            this.colBPM.Width = 47;
+            // 
+            // colDureeDuTestEnSec
+            // 
+            this.colDureeDuTestEnSec.Text = "Durée du test (en sec)";
+            this.colDureeDuTestEnSec.Width = 160;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(8, 18);
+            this.label4.Name = "label4";
+            this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label4.Size = new System.Drawing.Size(141, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Enregistrements";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.flowLayoutPanel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(16, 57);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(490, 26);
+            this.flowLayoutPanel4.TabIndex = 4;
+            // 
+            // menu3
+            // 
+            this.menu3.BackColor = System.Drawing.Color.Transparent;
+            this.menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu3.Controls.Add(this.label5);
+            this.menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu3.Location = new System.Drawing.Point(193, 18);
+            this.menu3.Name = "menu3";
+            this.menu3.Size = new System.Drawing.Size(520, 423);
+            this.menu3.TabIndex = 17;
+            this.menu3.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(8, 18);
+            this.label5.Name = "label5";
+            this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label5.Size = new System.Drawing.Size(131, 20);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Documentation";
+            // 
+            // tim3secondes
+            // 
+            this.tim3secondes.Interval = 1000;
+            this.tim3secondes.Tick += new System.EventHandler(this.tim3secondes_Tick);
+            // 
+            // timDuree
+            // 
+            this.timDuree.Interval = 1000;
+            this.timDuree.Tick += new System.EventHandler(this.timDuree_Tick);
+            // 
+            // timBPMvirtuel
+            // 
+            this.timBPMvirtuel.Interval = 1000;
+            this.timBPMvirtuel.Tick += new System.EventHandler(this.timBPMvirtuel_Tick);
+            // 
+            // frmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.ClientSize = new System.Drawing.Size(715, 465);
+            this.Controls.Add(this.btnMenu3);
+            this.Controls.Add(this.btnMenu2);
+            this.Controls.Add(this.btnMenu1);
+            this.Controls.Add(this.btnLogo);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.btnRetrecir);
+            this.Controls.Add(this.btnFermer);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.menu1);
+            this.Controls.Add(this.menu2);
+            this.Controls.Add(this.menu3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmMain";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).EndInit();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).EndInit();
+            this.btnMenu1.ResumeLayout(false);
+            this.btnMenu1.PerformLayout();
+            this.btnMenu2.ResumeLayout(false);
+            this.btnMenu2.PerformLayout();
+            this.btnMenu3.ResumeLayout(false);
+            this.btnMenu3.PerformLayout();
+            this.menu1.ResumeLayout(false);
+            this.menu1.PerformLayout();
+            this.menu2.ResumeLayout(false);
+            this.menu2.PerformLayout();
+            this.menu3.ResumeLayout(false);
+            this.menu3.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox btnFermer;
+        private System.Windows.Forms.PictureBox btnRetrecir;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.PictureBox btnLogo;
+        private System.Windows.Forms.FlowLayoutPanel btnMenu1;
+        private System.Windows.Forms.Label lblMenu1;
+        private System.Windows.Forms.Label lblMenu2;
+        private System.Windows.Forms.FlowLayoutPanel btnMenu2;
+        private System.Windows.Forms.Label lblMenu3;
+        private System.Windows.Forms.FlowLayoutPanel btnMenu3;
+        private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.TextBox tbxDuree;
+        private System.Windows.Forms.Label lblArduinoDetecte;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox menu1;
+        private System.Windows.Forms.GroupBox menu2;
+        private System.Windows.Forms.GroupBox menu3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl3sec;
+        private System.Windows.Forms.FlowLayoutPanel panel_menu_1_1;
+        private System.Windows.Forms.Timer tim3secondes;
+        private System.Windows.Forms.Label lblBPM1;
+        private System.Windows.Forms.Label lblBPM2;
+        private System.Windows.Forms.Timer timDuree;
+        private System.Windows.Forms.Button btnBPMvirtuel;
+        private System.Windows.Forms.Timer timBPMvirtuel;
+        private System.Windows.Forms.Label lblTmpRestant;
+        private System.Windows.Forms.Label lblBPM;
+        private LiveCharts.WinForms.CartesianChart chart;
+        private System.Windows.Forms.ListView lvEnregistrements;
+        private System.Windows.Forms.ColumnHeader colDateDuTest;
+        private System.Windows.Forms.ColumnHeader colHeureDuTest;
+        private System.Windows.Forms.ColumnHeader colBPM;
+        private System.Windows.Forms.ColumnHeader colDureeDuTestEnSec;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+    }
+}
+
