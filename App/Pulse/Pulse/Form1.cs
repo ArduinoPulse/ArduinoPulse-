@@ -591,6 +591,9 @@ namespace Pulse
             } catch
             {
                 timBPMReel.Enabled = false;
+                lblArduinoDetecte.Text = "L'arduino n'est pas détecté";
+                lblArduinoDetecte.ForeColor = Color.Red;
+                btnTest.Enabled = false;
             }
         }
         
