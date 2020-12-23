@@ -71,6 +71,6 @@ void loop(void)
    Serial.println(hearthbeat);
    
    // why *10 ?
-   delay(period*10);
+   delay(/*period*100*/1000);
   
 }

@@ -73,7 +73,9 @@ namespace Pulse
             // Changement d'affichages
             lblTmpRestant.Text = "Temps restant : " + tbxDuree.Text + " secondes";
 
-            tryToConnction();
+            
+            tryToConnection();
+         
         }
 
         private void updateSettings(string sKey, string sValue)
@@ -573,17 +575,17 @@ namespace Pulse
             var aPoint = new ObservablePoint(3, 5);
             chart.Series[0].Values.Add(aPoint);
         }
-
+        
         private void timBPMReel_Tick(object sender, EventArgs e)
         {
             string a = serialPort.ReadExisting();
             lblBPMTest.Text = a;
             Thread.Sleep(200);
         }
-
+        
         static SerialPort serialPort;
 
-        void tryToConnction() 
+        void tryToConnection() 
         {
             //Inisialisation des variables
             int iPort = 0;
@@ -621,6 +623,12 @@ namespace Pulse
                     bPort = false;
                     lblConnectionTest.Text = Convert.ToString(iPort);
                     iPort++;
+                }
+
+                if (iPort >= 50)
+                {
+                    bPort = true;
+                    lblConnectionTest.Text = "arduino pas detecter";
                 }
             }
         }
