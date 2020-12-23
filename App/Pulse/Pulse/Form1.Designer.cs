@@ -48,6 +48,7 @@
             this.lblArduinoDetecte = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menu1 = new System.Windows.Forms.GroupBox();
+            this.btnRefreshConnection = new System.Windows.Forms.PictureBox();
             this.lblBPM = new System.Windows.Forms.Label();
             this.chart = new LiveCharts.WinForms.CartesianChart();
             this.btnBPMvirtuel = new System.Windows.Forms.Button();
@@ -77,7 +78,6 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
-            this.btnRefreshConnection = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
@@ -86,9 +86,9 @@
             this.btnMenu2.SuspendLayout();
             this.btnMenu3.SuspendLayout();
             this.menu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).BeginInit();
             this.menu2.SuspendLayout();
             this.menu3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -338,6 +338,19 @@
             this.menu1.Size = new System.Drawing.Size(523, 423);
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
+            // 
+            // btnRefreshConnection
+            // 
+            this.btnRefreshConnection.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefreshConnection.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshConnection.BackgroundImage")));
+            this.btnRefreshConnection.Location = new System.Drawing.Point(318, 16);
+            this.btnRefreshConnection.Name = "btnRefreshConnection";
+            this.btnRefreshConnection.Padding = new System.Windows.Forms.Padding(3);
+            this.btnRefreshConnection.Size = new System.Drawing.Size(19, 19);
+            this.btnRefreshConnection.TabIndex = 26;
+            this.btnRefreshConnection.TabStop = false;
+            this.btnRefreshConnection.MouseLeave += new System.EventHandler(this.btnRefreshConnection_MouseLeave);
+            this.btnRefreshConnection.MouseHover += new System.EventHandler(this.btnRefreshConnection_MouseHover);
             // 
             // lblBPM
             // 
@@ -645,20 +658,6 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
-            // btnRefreshConnection
-            // 
-            this.btnRefreshConnection.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefreshConnection.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshConnection.BackgroundImage")));
-            this.btnRefreshConnection.Location = new System.Drawing.Point(318, 16);
-            this.btnRefreshConnection.Name = "btnRefreshConnection";
-            this.btnRefreshConnection.Padding = new System.Windows.Forms.Padding(3);
-            this.btnRefreshConnection.Size = new System.Drawing.Size(19, 19);
-            this.btnRefreshConnection.TabIndex = 26;
-            this.btnRefreshConnection.TabStop = false;
-            this.btnRefreshConnection.Click += new System.EventHandler(this.btnRefreshConnection_Click);
-            this.btnRefreshConnection.MouseLeave += new System.EventHandler(this.btnRefreshConnection_MouseLeave);
-            this.btnRefreshConnection.MouseHover += new System.EventHandler(this.btnRefreshConnection_MouseHover);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -674,9 +673,9 @@
             this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.menu1);
             this.Controls.Add(this.menu2);
             this.Controls.Add(this.menu3);
+            this.Controls.Add(this.menu1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Text = "Form1";
@@ -694,11 +693,11 @@
             this.btnMenu3.PerformLayout();
             this.menu1.ResumeLayout(false);
             this.menu1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).EndInit();
             this.menu2.ResumeLayout(false);
             this.menu2.PerformLayout();
             this.menu3.ResumeLayout(false);
             this.menu3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).EndInit();
             this.ResumeLayout(false);
 
         }

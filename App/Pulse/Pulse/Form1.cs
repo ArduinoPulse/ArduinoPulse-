@@ -465,6 +465,7 @@ namespace Pulse
             btnBPMvirtuel.ForeColor = Color.LightGreen;
 
             lblArduinoDetecte.Text = "L'arduino a été détecté.";
+            btnTest.Enabled = true;
             lblArduinoDetecte.ForeColor = Color.Green;
         }
 
@@ -501,6 +502,10 @@ namespace Pulse
             {
                 // Recherche des enregistrements
                 string[] aEnregistrements = File.ReadAllText(Properties.Settings.Default.enregistrementsPath).Split('\n');
+                aEnregistrements = Enumerable.Reverse(aEnregistrements).ToArray();
+
+                // Reverse les enregistrements
+
 
                 // Chercher les données dans le document
                 foreach (var enregistrement in aEnregistrements)
@@ -578,9 +583,15 @@ namespace Pulse
         
         private void timBPMReel_Tick(object sender, EventArgs e)
         {
-            string a = serialPort.ReadExisting();
-            lblBPM.Text = a;
-            Thread.Sleep(200);
+            try
+            {
+                string a = serialPort.ReadExisting();
+                lblBPM.Text = a;
+                Thread.Sleep(200);
+            } catch
+            {
+                timBPMReel.Enabled = false;
+            }
         }
         
         static SerialPort serialPort;
@@ -608,27 +619,33 @@ namespace Pulse
                     if (string.IsNullOrEmpty(t))
                     {
                         bPort = false;
-                        lblArduinoDetecte.Text = Convert.ToString(iPort)+ " : vide";
+                        lblArduinoDetecte.Text = "L'arduino n'est pas détecté";
+                        lblArduinoDetecte.ForeColor = Color.Red;
+                        btnTest.Enabled = false;
                         iPort++;
                     }
                     else
                     {
                         bPort = true;
-                        lblArduinoDetecte.Text = "arduino detecter : COM" + Convert.ToString(iPort);
+                        lblArduinoDetecte.Text = "L'arduino a été détecté."; // + Convert.ToString(iPort);
+                        lblArduinoDetecte.ForeColor = Color.Green;
+                        btnTest.Enabled = true;
                         timBPMReel.Enabled = true;
                     }
                 }
                 catch
                 {
                     bPort = false;
-                    lblArduinoDetecte.Text = Convert.ToString(iPort);
+                    // lblArduinoDetecte.Text = Convert.ToString(iPort);
                     iPort++;
                 }
 
                 if (iPort >= 50)
                 {
                     bPort = true;
-                    lblArduinoDetecte.Text = "arduino pas detecter";
+                    lblArduinoDetecte.Text = "L'arduino n'est pas détecté";
+                    lblArduinoDetecte.ForeColor = Color.Red;
+                    btnTest.Enabled = false;
                 }
             }
         }
