@@ -48,10 +48,8 @@
             this.lblArduinoDetecte = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menu1 = new System.Windows.Forms.GroupBox();
-            this.lblConnectionTest = new System.Windows.Forms.Label();
-            this.lblBPMTest = new System.Windows.Forms.Label();
-            this.chart = new LiveCharts.WinForms.CartesianChart();
             this.lblBPM = new System.Windows.Forms.Label();
+            this.chart = new LiveCharts.WinForms.CartesianChart();
             this.btnBPMvirtuel = new System.Windows.Forms.Button();
             this.lblBPM2 = new System.Windows.Forms.Label();
             this.lblBPM1 = new System.Windows.Forms.Label();
@@ -79,6 +77,7 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
+            this.btnRefreshConnection = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
@@ -89,6 +88,7 @@
             this.menu1.SuspendLayout();
             this.menu2.SuspendLayout();
             this.menu3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -317,11 +317,10 @@
             // 
             this.menu1.BackColor = System.Drawing.Color.Transparent;
             this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu1.Controls.Add(this.lblConnectionTest);
-            this.menu1.Controls.Add(this.lblBPMTest);
+            this.menu1.Controls.Add(this.btnRefreshConnection);
+            this.menu1.Controls.Add(this.lblBPM);
             this.menu1.Controls.Add(this.btnTest);
             this.menu1.Controls.Add(this.chart);
-            this.menu1.Controls.Add(this.lblBPM);
             this.menu1.Controls.Add(this.btnBPMvirtuel);
             this.menu1.Controls.Add(this.lblBPM2);
             this.menu1.Controls.Add(this.lblBPM1);
@@ -340,25 +339,16 @@
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
             // 
-            // lblConnectionTest
+            // lblBPM
             // 
-            this.lblConnectionTest.AutoSize = true;
-            this.lblConnectionTest.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblConnectionTest.Location = new System.Drawing.Point(110, 366);
-            this.lblConnectionTest.Name = "lblConnectionTest";
-            this.lblConnectionTest.Size = new System.Drawing.Size(35, 13);
-            this.lblConnectionTest.TabIndex = 24;
-            this.lblConnectionTest.Text = "label9";
-            // 
-            // lblBPMTest
-            // 
-            this.lblBPMTest.AutoSize = true;
-            this.lblBPMTest.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblBPMTest.Location = new System.Drawing.Point(41, 368);
-            this.lblBPMTest.Name = "lblBPMTest";
-            this.lblBPMTest.Size = new System.Drawing.Size(35, 13);
-            this.lblBPMTest.TabIndex = 23;
-            this.lblBPMTest.Text = "label9";
+            this.lblBPM.AutoSize = true;
+            this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBPM.Location = new System.Drawing.Point(489, 366);
+            this.lblBPM.Name = "lblBPM";
+            this.lblBPM.Size = new System.Drawing.Size(24, 16);
+            this.lblBPM.TabIndex = 23;
+            this.lblBPM.Text = "00";
             // 
             // chart
             // 
@@ -368,19 +358,6 @@
             this.chart.TabIndex = 0;
             this.chart.Text = "cartesianChart1";
             this.chart.Visible = false;
-            // 
-            // lblBPM
-            // 
-            this.lblBPM.AutoSize = true;
-            this.lblBPM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBPM.Location = new System.Drawing.Point(489, 366);
-            this.lblBPM.Name = "lblBPM";
-            this.lblBPM.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblBPM.Size = new System.Drawing.Size(24, 16);
-            this.lblBPM.TabIndex = 22;
-            this.lblBPM.Text = "00";
             // 
             // btnBPMvirtuel
             // 
@@ -668,6 +645,20 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
+            // btnRefreshConnection
+            // 
+            this.btnRefreshConnection.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefreshConnection.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshConnection.BackgroundImage")));
+            this.btnRefreshConnection.Location = new System.Drawing.Point(318, 16);
+            this.btnRefreshConnection.Name = "btnRefreshConnection";
+            this.btnRefreshConnection.Padding = new System.Windows.Forms.Padding(3);
+            this.btnRefreshConnection.Size = new System.Drawing.Size(19, 19);
+            this.btnRefreshConnection.TabIndex = 26;
+            this.btnRefreshConnection.TabStop = false;
+            this.btnRefreshConnection.Click += new System.EventHandler(this.btnRefreshConnection_Click);
+            this.btnRefreshConnection.MouseLeave += new System.EventHandler(this.btnRefreshConnection_MouseLeave);
+            this.btnRefreshConnection.MouseHover += new System.EventHandler(this.btnRefreshConnection_MouseHover);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -707,6 +698,7 @@
             this.menu2.PerformLayout();
             this.menu3.ResumeLayout(false);
             this.menu3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -746,7 +738,6 @@
         private System.Windows.Forms.Button btnBPMvirtuel;
         private System.Windows.Forms.Timer timBPMvirtuel;
         private System.Windows.Forms.Label lblTmpRestant;
-        private System.Windows.Forms.Label lblBPM;
         private LiveCharts.WinForms.CartesianChart chart;
         private System.Windows.Forms.ListView lvEnregistrements;
         private System.Windows.Forms.ColumnHeader colDateDuTest;
@@ -759,9 +750,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.Label lblBPMTest;
+        private System.Windows.Forms.Label lblBPM;
         private System.Windows.Forms.Timer timBPMReel;
-        private System.Windows.Forms.Label lblConnectionTest;
+        private System.Windows.Forms.PictureBox btnRefreshConnection;
     }
 }
 

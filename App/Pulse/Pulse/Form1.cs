@@ -579,7 +579,7 @@ namespace Pulse
         private void timBPMReel_Tick(object sender, EventArgs e)
         {
             string a = serialPort.ReadExisting();
-            lblBPMTest.Text = a;
+            lblBPM.Text = a;
             Thread.Sleep(200);
         }
         
@@ -608,29 +608,51 @@ namespace Pulse
                     if (string.IsNullOrEmpty(t))
                     {
                         bPort = false;
-                        lblConnectionTest.Text = Convert.ToString(iPort)+ " : vide";
+                        lblArduinoDetecte.Text = Convert.ToString(iPort)+ " : vide";
                         iPort++;
                     }
                     else
                     {
                         bPort = true;
-                        lblConnectionTest.Text = "arduino detecter : COM" + Convert.ToString(iPort);
+                        lblArduinoDetecte.Text = "arduino detecter : COM" + Convert.ToString(iPort);
                         timBPMReel.Enabled = true;
                     }
                 }
                 catch
                 {
                     bPort = false;
-                    lblConnectionTest.Text = Convert.ToString(iPort);
+                    lblArduinoDetecte.Text = Convert.ToString(iPort);
                     iPort++;
                 }
 
                 if (iPort >= 50)
                 {
                     bPort = true;
-                    lblConnectionTest.Text = "arduino pas detecter";
+                    lblArduinoDetecte.Text = "arduino pas detecter";
                 }
             }
+        }
+
+        private void btnRefreshConnection_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                tryToConnection();
+            }
+            catch
+            {
+                MessageBox.Show("Erreur lors de la recherche de l'Arduino");
+            }
+        }
+
+        private void btnRefreshConnection_MouseHover(object sender, EventArgs e)
+        {
+            btnRefreshConnection.BackColor = Color.FromArgb(50, 50, 50);
+        }
+
+        private void btnRefreshConnection_MouseLeave(object sender, EventArgs e)
+        {
+            btnRefreshConnection.BackColor = Color.Transparent;
         }
     }
 }
