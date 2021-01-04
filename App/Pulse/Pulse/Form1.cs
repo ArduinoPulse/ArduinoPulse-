@@ -603,7 +603,6 @@ namespace Pulse
         {
             //Inisialisation des variables
             int iPort = 0;
-            //int iTemp = 0;
             bool bPort = false;
 
             //Conncetion 
@@ -658,6 +657,7 @@ namespace Pulse
             try
             {
                 tryToConnection();
+                Application.DoEvents();
             }
             catch
             {

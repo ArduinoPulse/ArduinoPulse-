@@ -8,17 +8,17 @@
 //    code de la arduino
 //----------------------------------------
 // purpose:
-// 
+// ici on recuprere les valeurs du capteur et on les convertis en BPM et on affiche le resultat sur l ecran LCD et envoie a l application c# les valeurs
 //========================================
 #include <Wire.h>
 #include <LiquidCrystal.h> 
 
 // Instanciation of the LCD object
-// pourquoi 12,11,5,4,3,2 => noms des pins suffit
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 //initialisation des variables
-int period = 20; // What is it? and why 20 ?
+//int period = 20; // What is it? and why 20 ?
 
 /*
  * Basic function for Arduino
@@ -38,6 +38,8 @@ void setup(void)
    lcd.begin(16,2);
   
    //effacer ce qui est ecrit sur le LCD
+   lcd.print("mise a jour . . .");
+   delay(2500);
    lcd.clear();
    
    //affichage sur le LCD du texte static
@@ -52,6 +54,7 @@ void setup(void)
  * Main code of the board -- infinite loop
  * --------------------------
  * What is done here?
+ * on converti les donnés du capteu en BPM
  */
 void loop(void)
 {
@@ -71,6 +74,5 @@ void loop(void)
    Serial.println(hearthbeat);
    
    // why *10 ?
-   delay(/*period*100*/1000);
-  
+   delay(/*period*10*/1000);
 }

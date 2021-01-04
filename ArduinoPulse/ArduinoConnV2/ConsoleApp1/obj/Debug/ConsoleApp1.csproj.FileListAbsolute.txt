@@ -12,3 +12,10 @@ D:\2année\Modules\M306\J_proJect\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Deb
 D:\2année\Modules\M306\J_proJect\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\2année\Modules\M306\J_proJect\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\2année\Modules\M306\J_proJect\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\Documents\projet\ArduinoPulse-\ArduinoPulse\ArduinoConnV2\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

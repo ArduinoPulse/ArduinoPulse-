@@ -349,6 +349,7 @@
             this.btnRefreshConnection.Size = new System.Drawing.Size(19, 19);
             this.btnRefreshConnection.TabIndex = 26;
             this.btnRefreshConnection.TabStop = false;
+            this.btnRefreshConnection.Click += new System.EventHandler(this.btnRefreshConnection_Click);
             this.btnRefreshConnection.MouseLeave += new System.EventHandler(this.btnRefreshConnection_MouseLeave);
             this.btnRefreshConnection.MouseHover += new System.EventHandler(this.btnRefreshConnection_MouseHover);
             // 
@@ -677,6 +678,7 @@
             this.Controls.Add(this.menu2);
             this.Controls.Add(this.menu3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
