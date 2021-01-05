@@ -30,6 +30,7 @@ namespace Pulse
         int tim3sec = 4;
         int x = 0;
         int z = 0;
+        int iAdmin = 1;
 
         public frmMain()
         {
@@ -673,6 +674,20 @@ namespace Pulse
         private void btnRefreshConnection_MouseLeave(object sender, EventArgs e)
         {
             btnRefreshConnection.BackColor = Color.Transparent;
+        }
+        private void ActiverModeAdmin()
+        {
+            btnBPMvirtuel.Visible = true;
+            lblBPM.Visible = true;
+        }
+
+        private void btnLogo_Click(object sender, EventArgs e)
+        {
+            iAdmin++;
+            if(iAdmin == 5)
+            {
+                ActiverModeAdmin();
+            }
         }
     }
 }

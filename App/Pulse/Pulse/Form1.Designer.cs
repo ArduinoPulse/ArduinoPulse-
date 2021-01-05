@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnFermer = new System.Windows.Forms.PictureBox();
             this.btnRetrecir = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnLogo = new System.Windows.Forms.PictureBox();
             this.btnMenu1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblMenu1 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.lblArduinoDetecte = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menu1 = new System.Windows.Forms.GroupBox();
-            this.btnRefreshConnection = new System.Windows.Forms.PictureBox();
             this.lblBPM = new System.Windows.Forms.Label();
             this.chart = new LiveCharts.WinForms.CartesianChart();
             this.btnBPMvirtuel = new System.Windows.Forms.Button();
@@ -78,7 +78,16 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
-            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
@@ -88,9 +97,9 @@
             this.btnMenu2.SuspendLayout();
             this.btnMenu3.SuspendLayout();
             this.menu1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).BeginInit();
             this.menu2.SuspendLayout();
             this.menu3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -104,6 +113,18 @@
             this.flowLayoutPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseDown);
             this.flowLayoutPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseMove);
             this.flowLayoutPanel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.flowLayoutPanel1_MouseUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Pulse";
             // 
             // btnFermer
             // 
@@ -131,22 +152,10 @@
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1, 25);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 25);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(193, 414);
             this.flowLayoutPanel2.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Pulse";
             // 
             // flowLayoutPanel3
             // 
@@ -157,6 +166,18 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(716, 26);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(273, 15);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Developped by Thibaut Cotture & Julien Devanthey";
+            // 
             // btnLogo
             // 
             this.btnLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
@@ -166,6 +187,7 @@
             this.btnLogo.Size = new System.Drawing.Size(151, 43);
             this.btnLogo.TabIndex = 6;
             this.btnLogo.TabStop = false;
+            this.btnLogo.Click += new System.EventHandler(this.btnLogo_Click);
             // 
             // btnMenu1
             // 
@@ -204,12 +226,12 @@
             this.lblMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.lblMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMenu2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMenu2.Location = new System.Drawing.Point(72, 6);
+            this.lblMenu2.Location = new System.Drawing.Point(64, 6);
             this.lblMenu2.Name = "lblMenu2";
             this.lblMenu2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblMenu2.Size = new System.Drawing.Size(118, 20);
+            this.lblMenu2.Size = new System.Drawing.Size(126, 20);
             this.lblMenu2.TabIndex = 9;
-            this.lblMenu2.Text = "Enregistrement";
+            this.lblMenu2.Text = "Enregistrements";
             this.lblMenu2.Click += new System.EventHandler(this.lblMenu2_Click);
             this.lblMenu2.MouseEnter += new System.EventHandler(this.lblMenu2_MouseEnter);
             this.lblMenu2.MouseLeave += new System.EventHandler(this.lblMenu2_MouseLeave);
@@ -320,7 +342,6 @@
             // 
             this.menu1.BackColor = System.Drawing.Color.Transparent;
             this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu1.Controls.Add(this.btnRefreshConnection);
             this.menu1.Controls.Add(this.lblBPM);
             this.menu1.Controls.Add(this.btnTest);
             this.menu1.Controls.Add(this.chart);
@@ -332,29 +353,15 @@
             this.menu1.Controls.Add(this.lblArduinoDetecte);
             this.menu1.Controls.Add(this.label3);
             this.menu1.Controls.Add(this.tbxDuree);
-            this.menu1.Controls.Add(this.panel_menu_1_1);
             this.menu1.Controls.Add(this.label7);
             this.menu1.Controls.Add(this.lblTmpRestant);
+            this.menu1.Controls.Add(this.panel_menu_1_1);
             this.menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu1.Location = new System.Drawing.Point(193, 18);
+            this.menu1.Location = new System.Drawing.Point(194, 18);
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(523, 423);
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
-            // 
-            // btnRefreshConnection
-            // 
-            this.btnRefreshConnection.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefreshConnection.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefreshConnection.BackgroundImage")));
-            this.btnRefreshConnection.Location = new System.Drawing.Point(318, 16);
-            this.btnRefreshConnection.Name = "btnRefreshConnection";
-            this.btnRefreshConnection.Padding = new System.Windows.Forms.Padding(3);
-            this.btnRefreshConnection.Size = new System.Drawing.Size(19, 19);
-            this.btnRefreshConnection.TabIndex = 26;
-            this.btnRefreshConnection.TabStop = false;
-            this.btnRefreshConnection.Click += new System.EventHandler(this.btnRefreshConnection_Click);
-            this.btnRefreshConnection.MouseLeave += new System.EventHandler(this.btnRefreshConnection_MouseLeave);
-            this.btnRefreshConnection.MouseHover += new System.EventHandler(this.btnRefreshConnection_MouseHover);
             // 
             // lblBPM
             // 
@@ -366,6 +373,7 @@
             this.lblBPM.Size = new System.Drawing.Size(24, 16);
             this.lblBPM.TabIndex = 23;
             this.lblBPM.Text = "00";
+            this.lblBPM.Visible = false;
             // 
             // chart
             // 
@@ -388,6 +396,7 @@
             this.btnBPMvirtuel.TabIndex = 20;
             this.btnBPMvirtuel.Text = "Activer l\'entrée de BPM virtuel";
             this.btnBPMvirtuel.UseVisualStyleBackColor = false;
+            this.btnBPMvirtuel.Visible = false;
             this.btnBPMvirtuel.Click += new System.EventHandler(this.btnBPMvirtuel_Click);
             // 
             // lblBPM2
@@ -490,7 +499,7 @@
             this.menu2.Controls.Add(this.label4);
             this.menu2.Controls.Add(this.flowLayoutPanel4);
             this.menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu2.Location = new System.Drawing.Point(193, 18);
+            this.menu2.Location = new System.Drawing.Point(194, 18);
             this.menu2.Name = "menu2";
             this.menu2.Size = new System.Drawing.Size(523, 423);
             this.menu2.TabIndex = 16;
@@ -621,9 +630,19 @@
             // 
             this.menu3.BackColor = System.Drawing.Color.Transparent;
             this.menu3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu3.Controls.Add(this.pictureBox1);
+            this.menu3.Controls.Add(this.label20);
+            this.menu3.Controls.Add(this.label19);
+            this.menu3.Controls.Add(this.label18);
+            this.menu3.Controls.Add(this.label17);
+            this.menu3.Controls.Add(this.label16);
+            this.menu3.Controls.Add(this.label15);
+            this.menu3.Controls.Add(this.label14);
+            this.menu3.Controls.Add(this.label13);
+            this.menu3.Controls.Add(this.label12);
             this.menu3.Controls.Add(this.label5);
             this.menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu3.Location = new System.Drawing.Point(193, 18);
+            this.menu3.Location = new System.Drawing.Point(194, 18);
             this.menu3.Name = "menu3";
             this.menu3.Size = new System.Drawing.Size(523, 423);
             this.menu3.TabIndex = 17;
@@ -662,17 +681,133 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
-            // label9
+            // label12
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(3, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(273, 15);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "Developped by Thibaut Cotture & Julien Devanthey";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(21, 52);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(124, 20);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "1 - Installation";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(40, 79);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(225, 18);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "1.1 Brancher l\'Arduino au PC";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(40, 110);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label14.Size = new System.Drawing.Size(240, 18);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "1.2 Lancer l\'application \"Pulse\"";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(40, 140);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(398, 18);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "1.3 Vérifier que l\'Arduino a été correctement détecté";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(21, 199);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label16.Size = new System.Drawing.Size(115, 20);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "2 - Utilisation";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(40, 226);
+            this.label17.Name = "label17";
+            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label17.Size = new System.Drawing.Size(467, 18);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "2.1 Positionnez votre doigt sur le capteur comme ci-dessous";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(41, 348);
+            this.label18.Name = "label18";
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label18.Size = new System.Drawing.Size(358, 18);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "2.2 Cliquez sur le bouton \"Démarrer la lecture\"";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(41, 378);
+            this.label19.Name = "label19";
+            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label19.Size = new System.Drawing.Size(426, 18);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "2.3 Consultez vos tests dans l\'onglet \"Enregistrements\"";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.Location = new System.Drawing.Point(66, 162);
+            this.label20.Name = "label20";
+            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label20.Size = new System.Drawing.Size(245, 18);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "(Voir message en haut à droite)";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(69, 250);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
@@ -695,7 +830,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Pulse";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -712,11 +847,11 @@
             this.btnMenu3.PerformLayout();
             this.menu1.ResumeLayout(false);
             this.menu1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefreshConnection)).EndInit();
             this.menu2.ResumeLayout(false);
             this.menu2.PerformLayout();
             this.menu3.ResumeLayout(false);
             this.menu3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -770,8 +905,17 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label lblBPM;
         private System.Windows.Forms.Timer timBPMReel;
-        private System.Windows.Forms.PictureBox btnRefreshConnection;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
