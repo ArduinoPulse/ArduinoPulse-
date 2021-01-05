@@ -38,8 +38,8 @@ void setup(void)
    lcd.begin(16,2);
   
    //effacer ce qui est ecrit sur le LCD
-   lcd.print("mise a jour . . .");
-   delay(2500);
+   lcd.print(". . .");
+   delay(1000);
    lcd.clear();
    
    //affichage sur le LCD du texte static

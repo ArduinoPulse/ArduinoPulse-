@@ -78,6 +78,8 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
+            this.label9 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
             this.flowLayoutPanel3.SuspendLayout();
@@ -94,6 +96,7 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.flowLayoutPanel1.Controls.Add(this.label1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(715, 25);
@@ -141,17 +144,17 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 15);
+            this.label1.Size = new System.Drawing.Size(38, 15);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Pulse (Thibaut Cotture & Julien Devanthey)";
+            this.label1.Text = "Pulse";
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.flowLayoutPanel3.Controls.Add(this.label1);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(-1, 439);
+            this.flowLayoutPanel3.Controls.Add(this.label9);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 438);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(715, 25);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(716, 26);
             this.flowLayoutPanel3.TabIndex = 5;
             // 
             // btnLogo
@@ -659,6 +662,18 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.Location = new System.Drawing.Point(3, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(273, 15);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Developped by Thibaut Cotture & Julien Devanthey";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -682,6 +697,8 @@
             this.Name = "frmMain";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).EndInit();
             this.flowLayoutPanel3.ResumeLayout(false);
@@ -754,6 +771,7 @@
         private System.Windows.Forms.Label lblBPM;
         private System.Windows.Forms.Timer timBPMReel;
         private System.Windows.Forms.PictureBox btnRefreshConnection;
+        private System.Windows.Forms.Label label9;
     }
 }
 
