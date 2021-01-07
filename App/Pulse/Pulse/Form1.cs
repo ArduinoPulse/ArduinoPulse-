@@ -380,7 +380,7 @@ namespace Pulse
                 z += iCurrentBPM;
 
                 // Au cas ou la personne enlève son doigt du détecteur
-                if (iCurrentBPM < 0) {
+                if (iCurrentBPM <= 0) {
 
                     // Interruption du test
                     chart.Visible = false;

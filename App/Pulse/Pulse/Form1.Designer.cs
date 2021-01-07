@@ -53,12 +53,14 @@
             this.lblBPM1 = new System.Windows.Forms.Label();
             this.lblTmpRestant = new System.Windows.Forms.Label();
             this.chart = new LiveCharts.WinForms.CartesianChart();
-            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblBPM = new System.Windows.Forms.Label();
             this.btnBPMvirtuel = new System.Windows.Forms.Button();
             this.lbl3sec = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblMettreVotreDoigt = new System.Windows.Forms.Label();
+            this.picHeart = new System.Windows.Forms.PictureBox();
+            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.menu2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -88,8 +90,6 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
-            this.picHeart = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
@@ -99,11 +99,11 @@
             this.btnMenu2.SuspendLayout();
             this.btnMenu3.SuspendLayout();
             this.menu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).BeginInit();
+            this.flowLayoutPanel5.SuspendLayout();
             this.menu2.SuspendLayout();
             this.menu3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).BeginInit();
-            this.flowLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -292,7 +292,7 @@
             this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTest.Location = new System.Drawing.Point(149, 250);
+            this.btnTest.Location = new System.Drawing.Point(150, 265);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(213, 35);
             this.btnTest.TabIndex = 12;
@@ -402,7 +402,7 @@
             this.lblTmpRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblTmpRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTmpRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTmpRestant.Location = new System.Drawing.Point(160, 288);
+            this.lblTmpRestant.Location = new System.Drawing.Point(160, 298);
             this.lblTmpRestant.Name = "lblTmpRestant";
             this.lblTmpRestant.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTmpRestant.Size = new System.Drawing.Size(191, 15);
@@ -418,14 +418,6 @@
             this.chart.TabIndex = 0;
             this.chart.Text = "cartesianChart1";
             this.chart.Visible = false;
-            // 
-            // panel_menu_1_1
-            // 
-            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
-            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
-            this.panel_menu_1_1.Name = "panel_menu_1_1";
-            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
-            this.panel_menu_1_1.TabIndex = 4;
             // 
             // lblBPM
             // 
@@ -492,6 +484,34 @@
             this.lblMettreVotreDoigt.TabIndex = 16;
             this.lblMettreVotreDoigt.Text = "Veuillez placer votre doigt sur le capteur";
             this.lblMettreVotreDoigt.Visible = false;
+            // 
+            // picHeart
+            // 
+            this.picHeart.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHeart.ErrorImage")));
+            this.picHeart.Image = ((System.Drawing.Image)(resources.GetObject("picHeart.Image")));
+            this.picHeart.Location = new System.Drawing.Point(192, 121);
+            this.picHeart.Name = "picHeart";
+            this.picHeart.Size = new System.Drawing.Size(140, 118);
+            this.picHeart.TabIndex = 24;
+            this.picHeart.TabStop = false;
+            // 
+            // panel_menu_1_1
+            // 
+            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
+            this.panel_menu_1_1.Name = "panel_menu_1_1";
+            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
+            this.panel_menu_1_1.TabIndex = 4;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel5.Controls.Add(this.lblArduinoDetecte);
+            this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(329, 16);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(194, 22);
+            this.flowLayoutPanel5.TabIndex = 5;
             // 
             // menu2
             // 
@@ -815,26 +835,6 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
-            // picHeart
-            // 
-            this.picHeart.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHeart.ErrorImage")));
-            this.picHeart.Image = ((System.Drawing.Image)(resources.GetObject("picHeart.Image")));
-            this.picHeart.Location = new System.Drawing.Point(192, 121);
-            this.picHeart.Name = "picHeart";
-            this.picHeart.Size = new System.Drawing.Size(140, 118);
-            this.picHeart.TabIndex = 24;
-            this.picHeart.TabStop = false;
-            // 
-            // flowLayoutPanel5
-            // 
-            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel5.Controls.Add(this.lblArduinoDetecte);
-            this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(329, 16);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(194, 22);
-            this.flowLayoutPanel5.TabIndex = 5;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -873,14 +873,14 @@
             this.btnMenu3.PerformLayout();
             this.menu1.ResumeLayout(false);
             this.menu1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).EndInit();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             this.menu2.ResumeLayout(false);
             this.menu2.PerformLayout();
             this.menu3.ResumeLayout(false);
             this.menu3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).EndInit();
-            this.flowLayoutPanel5.ResumeLayout(false);
-            this.flowLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
