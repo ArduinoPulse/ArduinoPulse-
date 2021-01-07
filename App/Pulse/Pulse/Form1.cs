@@ -307,6 +307,7 @@ namespace Pulse
             z = 0;
             tim3sec = 4;
             lblBPM2.Visible = false;
+            lbl3sec.Visible = true;
             lblBPM2.Text = "BPM: 0";
             chart.Visible = false;
             picHeart.Visible = false;
@@ -385,6 +386,7 @@ namespace Pulse
                     // Interruption du test
                     chart.Visible = false;
                     lblBPM2.Visible = false;
+                    lbl3sec.Visible = false;
                     FinDuTest(0);
                     MessageBox.Show("Arrêt du test : Vous avez enlever votre doigt du capteur !");
                 }
