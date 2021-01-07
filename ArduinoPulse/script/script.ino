@@ -63,13 +63,21 @@ void loop(void)
 
    // Calcul the hearthbeat why this calcul?
    int hearthbeat = ADVal/10 - 20;
-   
+
+   //verification des données
+   if(hearthbeat<0)
+   {/*
+       lcd.setCursor(5,1); //display the actual data
+       lcd.print("---");*/
+       hearthbeat=0;
+   }
+  
    //affichage sur le LCD
    lcd.setCursor(5,1); //erase the old data
    lcd.print("      ");
    lcd.setCursor(5,1); //display the actual data
    lcd.print(hearthbeat);
-
+   
    //affichage sur l Aplication
    Serial.println(hearthbeat);
    
