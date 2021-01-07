@@ -56,9 +56,9 @@
             this.lblBPM1 = new System.Windows.Forms.Label();
             this.lbl3sec = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblMettreVotreDoigt = new System.Windows.Forms.Label();
             this.lblTmpRestant = new System.Windows.Forms.Label();
+            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menu2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -73,21 +73,21 @@
             this.label4 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.menu3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tim3secondes = new System.Windows.Forms.Timer(this.components);
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
@@ -319,7 +319,7 @@
             this.lblArduinoDetecte.ForeColor = System.Drawing.Color.Red;
             this.lblArduinoDetecte.Location = new System.Drawing.Point(338, 16);
             this.lblArduinoDetecte.Name = "lblArduinoDetecte";
-            this.lblArduinoDetecte.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblArduinoDetecte.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblArduinoDetecte.Size = new System.Drawing.Size(168, 16);
             this.lblArduinoDetecte.TabIndex = 10;
             this.lblArduinoDetecte.Text = "L\'arduino n\'est pas détecté";
@@ -342,20 +342,20 @@
             // 
             this.menu1.BackColor = System.Drawing.Color.Transparent;
             this.menu1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu1.Controls.Add(this.lblBPM);
             this.menu1.Controls.Add(this.btnTest);
-            this.menu1.Controls.Add(this.chart);
-            this.menu1.Controls.Add(this.btnBPMvirtuel);
             this.menu1.Controls.Add(this.lblBPM2);
             this.menu1.Controls.Add(this.lblBPM1);
+            this.menu1.Controls.Add(this.lblTmpRestant);
+            this.menu1.Controls.Add(this.chart);
+            this.menu1.Controls.Add(this.panel_menu_1_1);
+            this.menu1.Controls.Add(this.lblBPM);
+            this.menu1.Controls.Add(this.btnBPMvirtuel);
             this.menu1.Controls.Add(this.lbl3sec);
             this.menu1.Controls.Add(this.label6);
             this.menu1.Controls.Add(this.lblArduinoDetecte);
             this.menu1.Controls.Add(this.label3);
             this.menu1.Controls.Add(this.tbxDuree);
-            this.menu1.Controls.Add(this.label7);
-            this.menu1.Controls.Add(this.lblTmpRestant);
-            this.menu1.Controls.Add(this.panel_menu_1_1);
+            this.menu1.Controls.Add(this.lblMettreVotreDoigt);
             this.menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menu1.Location = new System.Drawing.Point(194, 18);
             this.menu1.Name = "menu1";
@@ -452,26 +452,19 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Tests";
             // 
-            // panel_menu_1_1
+            // lblMettreVotreDoigt
             // 
-            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
-            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
-            this.panel_menu_1_1.Name = "panel_menu_1_1";
-            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
-            this.panel_menu_1_1.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(96, 153);
-            this.label7.Name = "label7";
-            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label7.Size = new System.Drawing.Size(331, 20);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Veuillez placer votre doigt sur le capteur";
+            this.lblMettreVotreDoigt.AutoSize = true;
+            this.lblMettreVotreDoigt.BackColor = System.Drawing.Color.Transparent;
+            this.lblMettreVotreDoigt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMettreVotreDoigt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMettreVotreDoigt.Location = new System.Drawing.Point(96, 153);
+            this.lblMettreVotreDoigt.Name = "lblMettreVotreDoigt";
+            this.lblMettreVotreDoigt.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMettreVotreDoigt.Size = new System.Drawing.Size(331, 20);
+            this.lblMettreVotreDoigt.TabIndex = 16;
+            this.lblMettreVotreDoigt.Text = "Veuillez placer votre doigt sur le capteur";
+            this.lblMettreVotreDoigt.Visible = false;
             // 
             // lblTmpRestant
             // 
@@ -486,6 +479,14 @@
             this.lblTmpRestant.TabIndex = 21;
             this.lblTmpRestant.Text = "Temps restant : 30 secondes";
             this.lblTmpRestant.Visible = false;
+            // 
+            // panel_menu_1_1
+            // 
+            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
+            this.panel_menu_1_1.Name = "panel_menu_1_1";
+            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
+            this.panel_menu_1_1.TabIndex = 4;
             // 
             // menu2
             // 
@@ -648,6 +649,134 @@
             this.menu3.TabIndex = 17;
             this.menu3.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(69, 250);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 92);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label20.Location = new System.Drawing.Point(66, 162);
+            this.label20.Name = "label20";
+            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label20.Size = new System.Drawing.Size(245, 18);
+            this.label20.TabIndex = 18;
+            this.label20.Text = "(Voir message en haut à droite)";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Transparent;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label19.Location = new System.Drawing.Point(41, 378);
+            this.label19.Name = "label19";
+            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label19.Size = new System.Drawing.Size(426, 18);
+            this.label19.TabIndex = 17;
+            this.label19.Text = "2.3 Consultez vos tests dans l\'onglet \"Enregistrements\"";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label18.Location = new System.Drawing.Point(41, 348);
+            this.label18.Name = "label18";
+            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label18.Size = new System.Drawing.Size(358, 18);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "2.2 Cliquez sur le bouton \"Démarrer la lecture\"";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label17.Location = new System.Drawing.Point(40, 226);
+            this.label17.Name = "label17";
+            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label17.Size = new System.Drawing.Size(467, 18);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "2.1 Positionnez votre doigt sur le capteur comme ci-dessous";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label16.Location = new System.Drawing.Point(21, 199);
+            this.label16.Name = "label16";
+            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label16.Size = new System.Drawing.Size(115, 20);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "2 - Utilisation";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Location = new System.Drawing.Point(40, 140);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label15.Size = new System.Drawing.Size(398, 18);
+            this.label15.TabIndex = 13;
+            this.label15.Text = "1.3 Vérifier que l\'Arduino a été correctement détecté";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label14.Location = new System.Drawing.Point(40, 110);
+            this.label14.Name = "label14";
+            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label14.Size = new System.Drawing.Size(240, 18);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "1.2 Lancer l\'application \"Pulse\"";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label13.Location = new System.Drawing.Point(40, 79);
+            this.label13.Name = "label13";
+            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label13.Size = new System.Drawing.Size(225, 18);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "1.1 Brancher l\'Arduino au PC";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(21, 52);
+            this.label12.Name = "label12";
+            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label12.Size = new System.Drawing.Size(124, 20);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "1 - Installation";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -680,134 +809,6 @@
             // 
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(21, 52);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label12.Size = new System.Drawing.Size(124, 20);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "1 - Installation";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(40, 79);
-            this.label13.Name = "label13";
-            this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label13.Size = new System.Drawing.Size(225, 18);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "1.1 Brancher l\'Arduino au PC";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(40, 110);
-            this.label14.Name = "label14";
-            this.label14.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label14.Size = new System.Drawing.Size(240, 18);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "1.2 Lancer l\'application \"Pulse\"";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(40, 140);
-            this.label15.Name = "label15";
-            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label15.Size = new System.Drawing.Size(398, 18);
-            this.label15.TabIndex = 13;
-            this.label15.Text = "1.3 Vérifier que l\'Arduino a été correctement détecté";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label16.Location = new System.Drawing.Point(21, 199);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label16.Size = new System.Drawing.Size(115, 20);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "2 - Utilisation";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label17.Location = new System.Drawing.Point(40, 226);
-            this.label17.Name = "label17";
-            this.label17.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label17.Size = new System.Drawing.Size(467, 18);
-            this.label17.TabIndex = 15;
-            this.label17.Text = "2.1 Positionnez votre doigt sur le capteur comme ci-dessous";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label18.Location = new System.Drawing.Point(41, 348);
-            this.label18.Name = "label18";
-            this.label18.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label18.Size = new System.Drawing.Size(358, 18);
-            this.label18.TabIndex = 16;
-            this.label18.Text = "2.2 Cliquez sur le bouton \"Démarrer la lecture\"";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label19.Location = new System.Drawing.Point(41, 378);
-            this.label19.Name = "label19";
-            this.label19.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label19.Size = new System.Drawing.Size(426, 18);
-            this.label19.TabIndex = 17;
-            this.label19.Text = "2.3 Consultez vos tests dans l\'onglet \"Enregistrements\"";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label20.Location = new System.Drawing.Point(66, 162);
-            this.label20.Name = "label20";
-            this.label20.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label20.Size = new System.Drawing.Size(245, 18);
-            this.label20.TabIndex = 18;
-            this.label20.Text = "(Voir message en haut à droite)";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(69, 250);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 92);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
@@ -881,7 +882,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblMettreVotreDoigt;
         private System.Windows.Forms.Label lbl3sec;
         private System.Windows.Forms.FlowLayoutPanel panel_menu_1_1;
         private System.Windows.Forms.Timer tim3secondes;

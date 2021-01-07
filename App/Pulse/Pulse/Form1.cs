@@ -74,7 +74,6 @@ namespace Pulse
             // Changement d'affichages
             lblTmpRestant.Text = "Temps restant : " + tbxDuree.Text + " secondes";
 
-            
             tryToConnection();
          
         }
@@ -310,6 +309,7 @@ namespace Pulse
             lblBPM2.Visible = false;
             lblBPM2.Text = "BPM: 0";
             chart.Visible = false;
+            lblMettreVotreDoigt.Visible = true;
 
             lblBPM2.ForeColor = Color.White;
 
@@ -378,10 +378,19 @@ namespace Pulse
                 int iCurrentBPM = Convert.ToInt32(lblBPM.Text);
                 z += iCurrentBPM;
 
+                // Au cas ou la personne enlève son doigt du détecteur
+                if (iCurrentBPM < 0) {
+
+                    // Interruption du test
+                    chart.Visible = false;
+                    lblBPM2.Visible = false;
+                    FinDuTest(0);
+                    MessageBox.Show("Arrêt du test : Vous avez enlever votre doigt du capteur !");
+                }
+
                 // Graphique
                 var aPoint = new ObservablePoint(z, iCurrentBPM);
                 chart.Series[0].Values.Add(aPoint);
-
 
                 // Afficher le calcule en direct
                 lblBPM2.Text = "BPM: " + iCurrentBPM;
@@ -393,38 +402,44 @@ namespace Pulse
             }
             else
             {
-                // FIN DU TEST
-
                 // Calcule du BPM moyen durant le test
                 double dBPM = z / Convert.ToInt32(tbxDuree.Text);
 
-                // Arrêter le calcule
-                timDuree.Enabled = false;
+                // FIN DU TEST
+                FinDuTest(dBPM);
 
-                btnTest.Text = "Recommencer";
-                btnTest.Enabled = true;
-
-                lblBPM2.Text = "BPM: " + dBPM; // Moyenne des BPM depuis le début du test
-                lblBPM2.ForeColor = Color.Green;
-                lblBPM2.Font = new Font("Microsoft Sans Serif", 32, FontStyle.Bold);
-                lblBPM2.Location = new Point(158, 100);
-
-                lblTmpRestant.Visible = false;
-                lblBPM1.Visible = false;
-
-                tbxDuree.Enabled = true;
-
-                // Ajouter dans les enregistrements
-                string sDateDuTest = DateTime.Today.ToString("dd.MM.yyyy");
-                string sHeureDuTest = DateTime.Now.ToString("HH:mm");
-                string sBPM = dBPM.ToString();
-                string sDureeDuTest = tbxDuree.Text;
-                ajouterEnregistrement(sDateDuTest, sHeureDuTest, sBPM, sDureeDuTest);
+                // Ajout de l'enregistrement
+                ajouterEnregistrement(dBPM);
             }
         }
-
-        private void ajouterEnregistrement(string sDate, string sHeure, string sBPM, string sDuree)
+        private void FinDuTest(double dBPM)
         {
+            // Arrêter le calcule
+            timDuree.Enabled = false;
+
+            btnTest.Text = "Recommencer";
+            btnTest.Enabled = true;
+
+            lblBPM2.Text = "BPM: " + dBPM; // Moyenne des BPM depuis le début du test
+            lblBPM2.ForeColor = Color.Green;
+            lblBPM2.Font = new Font("Microsoft Sans Serif", 32, FontStyle.Bold);
+            lblBPM2.Location = new Point(158, 100);
+
+            lblTmpRestant.Visible = false;
+            lblBPM1.Visible = false;
+            lblMettreVotreDoigt.Visible = false;
+
+            tbxDuree.Enabled = true;
+        }
+
+        private void ajouterEnregistrement(double dBPM)
+        {
+            // Ajouter dans les enregistrements
+            string sDate = DateTime.Today.ToString("dd.MM.yyyy");
+            string sHeure = DateTime.Now.ToString("HH:mm");
+            string sBPM = dBPM.ToString();
+            string sDuree = tbxDuree.Text;
+
             // Lecture
             string sEnregistrements = File.ReadAllText(Properties.Settings.Default.enregistrementsPath);
 
@@ -474,7 +489,7 @@ namespace Pulse
         {
             // Génération d'un BPM
             Random rdm = new Random();
-            int iRandom = rdm.Next(65, 69);
+            int iRandom = rdm.Next(63, 69);
 
             // Affichage du BPM
             lblBPM.Text = Convert.ToString(iRandom);
@@ -666,15 +681,6 @@ namespace Pulse
             }
         }
 
-        private void btnRefreshConnection_MouseHover(object sender, EventArgs e)
-        {
-            btnRefreshConnection.BackColor = Color.FromArgb(50, 50, 50);
-        }
-
-        private void btnRefreshConnection_MouseLeave(object sender, EventArgs e)
-        {
-            btnRefreshConnection.BackColor = Color.Transparent;
-        }
         private void ActiverModeAdmin()
         {
             btnBPMvirtuel.Visible = true;
