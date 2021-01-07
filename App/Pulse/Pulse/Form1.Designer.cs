@@ -49,16 +49,16 @@
             this.lblArduinoDetecte = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.menu1 = new System.Windows.Forms.GroupBox();
-            this.lblBPM = new System.Windows.Forms.Label();
-            this.chart = new LiveCharts.WinForms.CartesianChart();
-            this.btnBPMvirtuel = new System.Windows.Forms.Button();
             this.lblBPM2 = new System.Windows.Forms.Label();
             this.lblBPM1 = new System.Windows.Forms.Label();
+            this.lblTmpRestant = new System.Windows.Forms.Label();
+            this.chart = new LiveCharts.WinForms.CartesianChart();
+            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.lblBPM = new System.Windows.Forms.Label();
+            this.btnBPMvirtuel = new System.Windows.Forms.Button();
             this.lbl3sec = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblMettreVotreDoigt = new System.Windows.Forms.Label();
-            this.lblTmpRestant = new System.Windows.Forms.Label();
-            this.panel_menu_1_1 = new System.Windows.Forms.FlowLayoutPanel();
             this.menu2 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -88,6 +88,8 @@
             this.timDuree = new System.Windows.Forms.Timer(this.components);
             this.timBPMvirtuel = new System.Windows.Forms.Timer(this.components);
             this.timBPMReel = new System.Windows.Forms.Timer(this.components);
+            this.picHeart = new System.Windows.Forms.PictureBox();
+            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFermer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRetrecir)).BeginInit();
@@ -100,6 +102,8 @@
             this.menu2.SuspendLayout();
             this.menu3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).BeginInit();
+            this.flowLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -317,7 +321,7 @@
             this.lblArduinoDetecte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.lblArduinoDetecte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArduinoDetecte.ForeColor = System.Drawing.Color.Red;
-            this.lblArduinoDetecte.Location = new System.Drawing.Point(338, 16);
+            this.lblArduinoDetecte.Location = new System.Drawing.Point(23, 0);
             this.lblArduinoDetecte.Name = "lblArduinoDetecte";
             this.lblArduinoDetecte.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblArduinoDetecte.Size = new System.Drawing.Size(168, 16);
@@ -347,57 +351,22 @@
             this.menu1.Controls.Add(this.lblBPM1);
             this.menu1.Controls.Add(this.lblTmpRestant);
             this.menu1.Controls.Add(this.chart);
-            this.menu1.Controls.Add(this.panel_menu_1_1);
             this.menu1.Controls.Add(this.lblBPM);
             this.menu1.Controls.Add(this.btnBPMvirtuel);
             this.menu1.Controls.Add(this.lbl3sec);
             this.menu1.Controls.Add(this.label6);
-            this.menu1.Controls.Add(this.lblArduinoDetecte);
             this.menu1.Controls.Add(this.label3);
             this.menu1.Controls.Add(this.tbxDuree);
             this.menu1.Controls.Add(this.lblMettreVotreDoigt);
+            this.menu1.Controls.Add(this.picHeart);
+            this.menu1.Controls.Add(this.panel_menu_1_1);
+            this.menu1.Controls.Add(this.flowLayoutPanel5);
             this.menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.menu1.Location = new System.Drawing.Point(194, 18);
             this.menu1.Name = "menu1";
             this.menu1.Size = new System.Drawing.Size(523, 423);
             this.menu1.TabIndex = 15;
             this.menu1.TabStop = false;
-            // 
-            // lblBPM
-            // 
-            this.lblBPM.AutoSize = true;
-            this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBPM.Location = new System.Drawing.Point(489, 366);
-            this.lblBPM.Name = "lblBPM";
-            this.lblBPM.Size = new System.Drawing.Size(24, 16);
-            this.lblBPM.TabIndex = 23;
-            this.lblBPM.Text = "00";
-            this.lblBPM.Visible = false;
-            // 
-            // chart
-            // 
-            this.chart.Location = new System.Drawing.Point(29, 146);
-            this.chart.Name = "chart";
-            this.chart.Size = new System.Drawing.Size(465, 121);
-            this.chart.TabIndex = 0;
-            this.chart.Text = "cartesianChart1";
-            this.chart.Visible = false;
-            // 
-            // btnBPMvirtuel
-            // 
-            this.btnBPMvirtuel.BackColor = System.Drawing.Color.Silver;
-            this.btnBPMvirtuel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBPMvirtuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBPMvirtuel.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnBPMvirtuel.Location = new System.Drawing.Point(304, 385);
-            this.btnBPMvirtuel.Name = "btnBPMvirtuel";
-            this.btnBPMvirtuel.Size = new System.Drawing.Size(207, 29);
-            this.btnBPMvirtuel.TabIndex = 20;
-            this.btnBPMvirtuel.Text = "Activer l\'entrée de BPM virtuel";
-            this.btnBPMvirtuel.UseVisualStyleBackColor = false;
-            this.btnBPMvirtuel.Visible = false;
-            this.btnBPMvirtuel.Click += new System.EventHandler(this.btnBPMvirtuel_Click);
             // 
             // lblBPM2
             // 
@@ -426,6 +395,64 @@
             this.lblBPM1.TabIndex = 18;
             this.lblBPM1.Text = "Calcule en cours... Veuillez ne pas bouger votre doigt !";
             this.lblBPM1.Visible = false;
+            // 
+            // lblTmpRestant
+            // 
+            this.lblTmpRestant.AutoSize = true;
+            this.lblTmpRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.lblTmpRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTmpRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTmpRestant.Location = new System.Drawing.Point(160, 288);
+            this.lblTmpRestant.Name = "lblTmpRestant";
+            this.lblTmpRestant.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTmpRestant.Size = new System.Drawing.Size(191, 15);
+            this.lblTmpRestant.TabIndex = 21;
+            this.lblTmpRestant.Text = "Temps restant : 30 secondes";
+            this.lblTmpRestant.Visible = false;
+            // 
+            // chart
+            // 
+            this.chart.Location = new System.Drawing.Point(29, 146);
+            this.chart.Name = "chart";
+            this.chart.Size = new System.Drawing.Size(465, 121);
+            this.chart.TabIndex = 0;
+            this.chart.Text = "cartesianChart1";
+            this.chart.Visible = false;
+            // 
+            // panel_menu_1_1
+            // 
+            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
+            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
+            this.panel_menu_1_1.Name = "panel_menu_1_1";
+            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
+            this.panel_menu_1_1.TabIndex = 4;
+            // 
+            // lblBPM
+            // 
+            this.lblBPM.AutoSize = true;
+            this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBPM.Location = new System.Drawing.Point(489, 366);
+            this.lblBPM.Name = "lblBPM";
+            this.lblBPM.Size = new System.Drawing.Size(24, 16);
+            this.lblBPM.TabIndex = 23;
+            this.lblBPM.Text = "00";
+            this.lblBPM.Visible = false;
+            // 
+            // btnBPMvirtuel
+            // 
+            this.btnBPMvirtuel.BackColor = System.Drawing.Color.Silver;
+            this.btnBPMvirtuel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBPMvirtuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBPMvirtuel.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnBPMvirtuel.Location = new System.Drawing.Point(304, 385);
+            this.btnBPMvirtuel.Name = "btnBPMvirtuel";
+            this.btnBPMvirtuel.Size = new System.Drawing.Size(207, 29);
+            this.btnBPMvirtuel.TabIndex = 20;
+            this.btnBPMvirtuel.Text = "Activer l\'entrée de BPM virtuel";
+            this.btnBPMvirtuel.UseVisualStyleBackColor = false;
+            this.btnBPMvirtuel.Visible = false;
+            this.btnBPMvirtuel.Click += new System.EventHandler(this.btnBPMvirtuel_Click);
             // 
             // lbl3sec
             // 
@@ -465,28 +492,6 @@
             this.lblMettreVotreDoigt.TabIndex = 16;
             this.lblMettreVotreDoigt.Text = "Veuillez placer votre doigt sur le capteur";
             this.lblMettreVotreDoigt.Visible = false;
-            // 
-            // lblTmpRestant
-            // 
-            this.lblTmpRestant.AutoSize = true;
-            this.lblTmpRestant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.lblTmpRestant.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTmpRestant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTmpRestant.Location = new System.Drawing.Point(160, 288);
-            this.lblTmpRestant.Name = "lblTmpRestant";
-            this.lblTmpRestant.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.lblTmpRestant.Size = new System.Drawing.Size(191, 15);
-            this.lblTmpRestant.TabIndex = 21;
-            this.lblTmpRestant.Text = "Temps restant : 30 secondes";
-            this.lblTmpRestant.Visible = false;
-            // 
-            // panel_menu_1_1
-            // 
-            this.panel_menu_1_1.BackColor = System.Drawing.Color.Transparent;
-            this.panel_menu_1_1.Location = new System.Drawing.Point(8, 75);
-            this.panel_menu_1_1.Name = "panel_menu_1_1";
-            this.panel_menu_1_1.Size = new System.Drawing.Size(505, 243);
-            this.panel_menu_1_1.TabIndex = 4;
             // 
             // menu2
             // 
@@ -810,6 +815,26 @@
             this.timBPMReel.Interval = 1000;
             this.timBPMReel.Tick += new System.EventHandler(this.timBPMReel_Tick);
             // 
+            // picHeart
+            // 
+            this.picHeart.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picHeart.ErrorImage")));
+            this.picHeart.Image = ((System.Drawing.Image)(resources.GetObject("picHeart.Image")));
+            this.picHeart.Location = new System.Drawing.Point(192, 121);
+            this.picHeart.Name = "picHeart";
+            this.picHeart.Size = new System.Drawing.Size(140, 118);
+            this.picHeart.TabIndex = 24;
+            this.picHeart.TabStop = false;
+            // 
+            // flowLayoutPanel5
+            // 
+            this.flowLayoutPanel5.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel5.Controls.Add(this.lblArduinoDetecte);
+            this.flowLayoutPanel5.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(329, 16);
+            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(194, 22);
+            this.flowLayoutPanel5.TabIndex = 5;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -853,6 +878,9 @@
             this.menu3.ResumeLayout(false);
             this.menu3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHeart)).EndInit();
+            this.flowLayoutPanel5.ResumeLayout(false);
+            this.flowLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -917,6 +945,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picHeart;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
     }
 }
 

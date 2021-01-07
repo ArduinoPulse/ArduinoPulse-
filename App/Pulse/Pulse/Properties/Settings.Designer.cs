@@ -25,7 +25,7 @@ namespace Pulse.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".//pulse//settings.conf")]
+        [global::System.Configuration.DefaultSettingValueAttribute(".//settings.conf")]
         public string settingsPath {
             get {
                 return ((string)(this["settingsPath"]));
@@ -34,7 +34,7 @@ namespace Pulse.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(".//pulse//enregistrements.csv")]
+        [global::System.Configuration.DefaultSettingValueAttribute(".//enregistrements.csv")]
         public string enregistrementsPath {
             get {
                 return ((string)(this["enregistrementsPath"]));

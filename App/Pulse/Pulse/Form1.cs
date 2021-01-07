@@ -309,6 +309,7 @@ namespace Pulse
             lblBPM2.Visible = false;
             lblBPM2.Text = "BPM: 0";
             chart.Visible = false;
+            picHeart.Visible = false;
             lblMettreVotreDoigt.Visible = true;
 
             lblBPM2.ForeColor = Color.White;
