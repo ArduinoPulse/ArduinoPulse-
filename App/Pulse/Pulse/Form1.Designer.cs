@@ -54,7 +54,6 @@
             this.lblTmpRestant = new System.Windows.Forms.Label();
             this.chart = new LiveCharts.WinForms.CartesianChart();
             this.lblBPM = new System.Windows.Forms.Label();
-            this.btnBPMvirtuel = new System.Windows.Forms.Button();
             this.lbl3sec = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblMettreVotreDoigt = new System.Windows.Forms.Label();
@@ -122,11 +121,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label1.Size = new System.Drawing.Size(47, 21);
             this.label1.TabIndex = 4;
             this.label1.Text = "Pulse";
             // 
@@ -178,9 +178,11 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(273, 15);
+            this.label9.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.label9.Size = new System.Drawing.Size(199, 20);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Developped by Thibaut Cotture & Julien Devanthey";
+            this.label9.Text = "Cotture Thibaut et Devanthey Julien";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnLogo
             // 
@@ -352,7 +354,6 @@
             this.menu1.Controls.Add(this.lblTmpRestant);
             this.menu1.Controls.Add(this.chart);
             this.menu1.Controls.Add(this.lblBPM);
-            this.menu1.Controls.Add(this.btnBPMvirtuel);
             this.menu1.Controls.Add(this.lbl3sec);
             this.menu1.Controls.Add(this.label6);
             this.menu1.Controls.Add(this.label3);
@@ -424,27 +425,12 @@
             this.lblBPM.AutoSize = true;
             this.lblBPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblBPM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBPM.Location = new System.Drawing.Point(489, 366);
+            this.lblBPM.Location = new System.Drawing.Point(493, 401);
             this.lblBPM.Name = "lblBPM";
             this.lblBPM.Size = new System.Drawing.Size(24, 16);
             this.lblBPM.TabIndex = 23;
             this.lblBPM.Text = "00";
             this.lblBPM.Visible = false;
-            // 
-            // btnBPMvirtuel
-            // 
-            this.btnBPMvirtuel.BackColor = System.Drawing.Color.Silver;
-            this.btnBPMvirtuel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBPMvirtuel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBPMvirtuel.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnBPMvirtuel.Location = new System.Drawing.Point(304, 385);
-            this.btnBPMvirtuel.Name = "btnBPMvirtuel";
-            this.btnBPMvirtuel.Size = new System.Drawing.Size(207, 29);
-            this.btnBPMvirtuel.TabIndex = 20;
-            this.btnBPMvirtuel.Text = "Activer l\'entrée de BPM virtuel";
-            this.btnBPMvirtuel.UseVisualStyleBackColor = false;
-            this.btnBPMvirtuel.Visible = false;
-            this.btnBPMvirtuel.Click += new System.EventHandler(this.btnBPMvirtuel_Click);
             // 
             // lbl3sec
             // 
@@ -917,7 +903,6 @@
         private System.Windows.Forms.Label lblBPM1;
         private System.Windows.Forms.Label lblBPM2;
         private System.Windows.Forms.Timer timDuree;
-        private System.Windows.Forms.Button btnBPMvirtuel;
         private System.Windows.Forms.Timer timBPMvirtuel;
         private System.Windows.Forms.Label lblTmpRestant;
         private LiveCharts.WinForms.CartesianChart chart;

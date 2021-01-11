@@ -475,19 +475,6 @@ namespace Pulse
                 };
         }
 
-        private void btnBPMvirtuel_Click(object sender, EventArgs e)
-        {
-            // Démarrer le reçu de BPM virtuel
-            timBPMvirtuel.Enabled = true;
-            btnBPMvirtuel.Enabled = false;
-            btnBPMvirtuel.Text = "BPM virtuel activé";
-            btnBPMvirtuel.ForeColor = Color.LightGreen;
-
-            lblArduinoDetecte.Text = "L'arduino a été détecté.";
-            btnTest.Enabled = true;
-            lblArduinoDetecte.ForeColor = Color.Green;
-        }
-
         private void timBPMvirtuel_Tick(object sender, EventArgs e)
         {
             // Génération d'un BPM
@@ -684,18 +671,18 @@ namespace Pulse
             }
         }
 
-        private void ActiverModeAdmin()
-        {
-            btnBPMvirtuel.Visible = true;
-            lblBPM.Visible = true;
-        }
-
         private void btnLogo_Click(object sender, EventArgs e)
         {
             iAdmin++;
             if(iAdmin == 5)
             {
-                ActiverModeAdmin();
+                // Démarrer le reçu de BPM virtuel
+                timBPMvirtuel.Enabled = true;
+                lblBPM.Visible = true;
+
+                lblArduinoDetecte.Text = "L'arduino a été détecté.";
+                btnTest.Enabled = true;
+                lblArduinoDetecte.ForeColor = Color.Green;
             }
         }
     }
