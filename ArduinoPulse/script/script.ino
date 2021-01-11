@@ -66,9 +66,7 @@ void loop(void)
 
    //verification des données
    if(hearthbeat<0)
-   {/*
-       lcd.setCursor(5,1); //display the actual data
-       lcd.print("---");*/
+   {
        hearthbeat=0;
    }
   
@@ -81,6 +79,5 @@ void loop(void)
    //affichage sur l Aplication
    Serial.println(hearthbeat);
    
-   // why *10 ?
-   delay(/*period*10*/1000);
+   delay(1000);
 }
