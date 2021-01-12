@@ -520,7 +520,7 @@ namespace Pulse
                     string sDateDuTest = enregistrement.Split(';')[0];
                     string sHeureDuTest = enregistrement.Split(';')[1];
                     string sBPM = enregistrement.Split(';')[2];
-                    string sDureeDuTestEnSec = enregistrement.Split(';')[3];
+                    string sDureeDuTestEnSec = enregistrement.Split(';')[3] + " secondes";
 
                     // Ajouter dans la listview
                     string[] row = { "", sDateDuTest, sHeureDuTest, sBPM, sDureeDuTestEnSec };
@@ -674,15 +674,21 @@ namespace Pulse
         private void btnLogo_Click(object sender, EventArgs e)
         {
             iAdmin++;
-            if(iAdmin == 5)
+            if(iAdmin == 3)
             {
                 // Démarrer le reçu de BPM virtuel
                 timBPMvirtuel.Enabled = true;
-                lblBPM.Visible = true;
+                lblBPM.Visible = false;
 
                 lblArduinoDetecte.Text = "L'arduino a été détecté.";
                 btnTest.Enabled = true;
                 lblArduinoDetecte.ForeColor = Color.Green;
+            }
+
+            if (iAdmin == 10)
+            {
+                // Démarrer le reçu de BPM virtuel
+                lblBPM.Visible = true;
             }
         }
     }
